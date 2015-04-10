@@ -4,11 +4,11 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Presentation title - Speaker name</title>
+		<title>Work in a team without tripping over each other with Drupal - Fabien Clément</title>
 
     <link rel="shortcut icon" href="lib/image/favicon.ico" />
-		<meta name="description" content="Presentation description">
-		<meta name="author" content="Speaker Name">
+		<meta name="description" content="Work in a team without tripping over each other with Drupal.">
+		<meta name="author" content="Fabien Clément">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 		<link rel="stylesheet" href="css/theme/ddd.css" id="theme">
+		<link rel="stylesheet" href="css/theme/personal.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,360 +42,323 @@
 		<div class="reveal">
         <footer>
             <div class="branding--logo">
+                <span class="logo__image"><img src="img/commerceguys.png" alt="Commerce Guys" /></span>
                 <span class="logo__image"><img src="lib/image/logo.png" alt="DrupalDeveloperDays Montpellier 2015 logo" height="55px"></span>
                 <p class="logo__site-name">#drupaldevdays</p>
             </div>
             <div class="session--info">
-                <p class="session__title">Presentation title <span class="seperator">&nbsp;/&nbsp;</span></p>
-                <p class="session__presenter">Speaker Name</p>
+                <p class="session__title">Work in a team without tripping over each other with Drupal <span class="seperator">&nbsp;/&nbsp;</span></p>
+                <p class="session__presenter">Fabien Clément @GozOo</p>
             </div>
         </footer>
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section class="ddd-intro" data-background="lib/image/background.jpg">
-					<h1>Presentation name</h1>
-					<h2>Speaker name - @SpeakerName</h3>
+					<h1>Work in a team without tripping over each other with Drupal.</h1>
+					<h2>Fabien Clément - @GozOo</h2>
+                    <p class="function">
+                        <small>Developper <a href="https://twitter.com/commerceguys">@CommerceGuys</a></small>
+                    </p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						This template is aimed to speakers who want to us reveal.js for their slides during DrupalDeveloperDays Montpellier 2015.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Drupal Context</h2>
+                        <p>
+                            Why Drupal makes team work hard.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>How Drupal is built</h2>
 
-				<section>
-				  <h2>How to use this template</h2>
-					<ul>
-					  <li>Fork <a href="https://github.com/SebCorbin/reveal.js">this repo</a></li>
-					  <li>Edit the file index.html and change according to your session:
-					    <ul>
-					      <li>The &lt;title&gt; tag</li>
-					      <li>The presentation title and speaker name in the &lt;footer&gt; tag</li>
-					      <li>The &lt;h1&gt; and &lt;h2&gt; in the first &lt;section&gt; tag</li>
-					    </ul>
-					  </li>
-					  <li>Commit your changes to the branches <strong>master</strong> and <strong>gh-pages</strong></li>
-					  <li>After a while, they will be <a href="https://sebcorbin.github.io/reveal.js">publicly accessible on http://username.github.io/repository</a></li>
-					</ul>
-				</section>
+                        <div class="box" style="width: 40%;display: inline-block; vertical-align: top;margin: 1em;">
+                            <div class="box-header">
+                                Database
+                            </div>
+                            <div class="box-content" style="font-size: 0.8em;">
+                                <ul>
+                                    <li>Content</li>
+                                    <li>Entities</li>
+                                    <li>Translations</li>
+                                    <li>Taxonomies</li>
+                                    <li>Menus</li>
+                                    <li>Configuration</li>
+                                    <li>Entities and fields definitions</li>
+                                    <li>Variables</li>
+                                    <li>Modules display (Views, Panels, Display Suite etc)</li>
+                                    <li>Registry</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box" style="width: 40%;display: inline-block; vertical-align: top;margin: 1em;">
+                            <div class="box-header">
+                                Files
+                            </div>
+                            <div class="box-content" style="font-size: 0.8em;">
+                                <ul>
+                                    <li>Initial content</li>
+                                    <li>Some translations</li>
+                                    <li>Some menus items</li>
+                                    <li>Initial configuration</li>
+                                    <li>Some entities and fields definition</li>
+                                    <li>Some modules display</li>
+                                    <li>...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+                <!-- Example of nested vertical slides -->
+                <section>
+                    <section>
+                        <h2>How we use Drupal</h2>
+                        <p>
+                            Why it's hard to work with a team with Drupal.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Install modules</h2>
+                        <p>
+                            Add entries in system table. Execute installation
+                            stuffs (tables creations, edit existing tables or
+                            add contents if hooks from others modules are used,
+                            like create fields, entities).
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Create entities (+ bundles, fields)</h2>
+                        <p>Add entries in existing tables and create new one.</p>
+                    </section>
+                    <section>
+                        <h2>Create / edit content</h2>
+                        <p>Add entries in existing tables.</p>
+                    </section>
+                    <section>
+                        <h2>Edit variables</h2>
+                        <p>Add serialized entries in existing table.</p>
+                    </section>
+                    <section>
+                        <h2>Create / edit displays (like Views, Panels)</h2>
+                        <p>Add entries in existing table.</p>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Conflicts examples</h2>
+                    </section>
+                    <section>
+                        <h2>Configuration conflict</h2>
+                        <ul>
+                            <li>Julien create new A bundle with fields. + Yohan
+                            create new B bundle with fields.</li>
+                            <li>Julien and Yohan has to get A and B bundles.</li>
+                            <li>Yohan edit some of this fields from A bundle.</li>
+                            <li>Julien has to get updated fields by Yohan.</li>
+                        </ul>
+                        <p>
+                            <div style="width: 30%; display: inline-block; border-right: 4px solid white;">
+                                You don't want<br />
+                                You don't have
+                            </div>
+                            <div style="  width: 60%; display: inline-block; vertical-align: top; padding-top: 0.8em; text-align: left; padding-left: 0.8em;">
+                                to make updates manually.
+                            </div>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Data conflict</h2>
+                        <ul>
+                            <li>Some contents are needed to build site / work with
+                            existing website. </li>
+                            <li>Developers make some content / configuration
+                            changes, but changed are also made on existing
+                            website. </li>
+                            <li style="color: #d74343;"><strong>No content changes</strong> has to be <strong>losed</strong> on each environment.</li>
+                            <li style="color: #d74343;">Every configuration can be automatically overriden. All <strong>configuration</strong> made <strong>"on click"</strong> has to be considered as <strong>volatile</strong>.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Merge solutions</h2>
+                        <ul>
+                            <li>No database side solution is possible considering
+                            Drupal structure. </li>
+                            <li>Every changes has to be made in files. Consider,
+                            you want to update a website without having access
+                            to UI. </li>
+                            <li style="color: #d74343;">Consider every configurations you made with UI are lost.</li>
+                        </ul>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Available tools</h2>
+                    </section>
+                    <section>
+                        <h2>Git (or versionning system)</h2>
+                        <h3>What it does :</h3>
+                        <ul>
+                            <li>Versionning code will prevent you to lose modifications.</li>
+                            <li>Easy to know what changes was made by team.</li>
+                            <li>Easy to know what changes was made in files by automatic tasks like features.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Git (or versionning system)</h2>
+                        <h3>What you should use :</h3>
+                        <ul>
+                            <li>Use one branch by feature.</li>
+                            <li>Use `rebase` and `pull --rebase` instead of just merge to keep logs readable between branchs.</li>
+                            <li>Prefer little commits with one fix or feature instead of one commit with lots of them : easier to read and fix conflicts.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Drush</h2>
+                        <p>
+                            Command line tool for drupal.
+                        </p>
+                        <ul>
+                            <li>Launch commands given by modules (migration, features revert, database update etc).</li>
+                            <li>Build commands with your own tasks in Drupal context.</li>
+                            <li>Don't use custom scripts, create your own commands instead.</li>
+                        </ul>
+                        <p>
+                            <a href="https://github.com/drush-ops/drush" target="_blank">https://github.com/drush-ops/drush</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Drush make</h2>
+                        <p>
+                            Drush extension (includes with drush).<br />
+                            Define list of modules or library and for each :
+                        </p>
+                        <ul>
+                            <li>Which version</li>
+                            <li>Patchs to apply</li>
+                            <li>Git or wget available</li>
+                        </ul>
+                        <p>
+                            <a href="http://www.drush.org/en/master/make/" target="_blank">Help on drush.org</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Profile</h2>
+                        <p>
+                            Make stuff at project building like :
+                        </p>
+                        <ul>
+                            <li>Enable modules</li>
+                            <li>Create content</li>
+                        </ul>
+                        <p>
+                            <a href="https://www.drupal.org/node/1022020" target="_blank">How to write installation profile.</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Features</h2>
+                        <p>
+                            Feature module.
+                        </p>
+                        <ul>
+                            <li>Put some configurations built with UI in files :
+                                <ul>
+                                    <li>fields</li>
+                                    <li>variables</li>
+                                    <li>menus</li>
+                                    <li>taxonomies</li>
+                                    <li>views</li>
+                                    <li>panels</li>
+                                    <li>...</li>
+                                </ul>
+                            </li>
+                            <li>and revert them to database.</li>
+                        </ul>
+                        <p>
+                            <a href="http://drupal.org/project/features" target="_blank">http://drupal.org/project/features</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Implements hook_update_N()</h2>
+                        <p>
+                            Hook function from Drupal API.
+                        </p>
+                        <p>
+                            Make stuff during development project like :
+                        </p>
+                        <ul>
+                            <li>Enable modules</li>
+                            <li>Edit configurations not availables in features</li>
+                        </ul>
+                        <p>
+                            <a href="http://dgo.to/a/hook_update_N" target="_blank">http://dgo.to/a/hook_update_N</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Migrate module</h2>
+                        <p>
+                            Define content to import at project beginning
+                            (menu, node, taxonomy, user...).
+                        </p>
+                        <p>
+                            <a href="http://drupal.org/project/migrate" target="_blank">http://drupal.org/project/migrate</a>
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Use management tools</h2>
+                        <p>TODO</p>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+                <section>
+                    <section>
+                        <h2>Additionnal tips</h2>
+                    </section>
+                    <section>
+                        <h2>Tags convention</h2>
+                        <p>
+                            Define tags convention with your team to know which task
+                            has to be done if you don't want to launch feature
+                            revert, database update etc each time you pull code.
+                        </p>
+                        <p>
+                            Examples :
+                        </p>
+                        <pre><code style="word-wrap: break-word;">
+[fr] feature_module : Add user_fieldname. => [fr] = needs feature revert.
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+[add] metatags module. =>  [add] = new module added in .make.
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+[uninstall] metatags module. => [uninstall] = uninstall module.
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+[updb] Some stuff made on update. => [updb] = Update database.
+                        </code></pre>
+                    </section>
+                    <section>
+                        <h2>Keep each environments up to date</h2>
+                        <p>
+                            Do not maintain manually dev, staging etc environments.<br />Keep them automatically up to date with solutions like <a href="https://platform.sh/" target="_blank">Platform.sh</a>.
+                        </p>
+                        <ul>
+                            <li>Code updated thanks to git.</li>
+                            <li>Each environment is separated with his own database.</li>
+                            <li>Sync code / files / database between environments.</li>
+                            <li>Use makefile to rebuild drupal code each time you push code.</li>
+                            <li>Allow you to make stuff each time you push code like features revert, database updates, translations etc.</li>
+                        </ul>
+                    </section>
+                </section>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+                <section style="text-align: left;">
+                    <h1>THE END</h1>
+                    <p>
+                        <a href="http://gozoo.github.io/work-in-a-team-with-drupal/#/">Get this online on http://gozoo.github.io/work-in-a-team-with-drupal</a> <br>
+                    </p>
+                </section>
 
 			</div>
 
