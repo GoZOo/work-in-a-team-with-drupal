@@ -73,7 +73,7 @@
                     <section>
                         <h2>How Drupal is built</h2>
 
-                        <div class="box" style="width: 40%;display: inline-block; vertical-align: top;margin: 1em;">
+                        <div class="box fragment" style="width: 40%;display: inline-block; vertical-align: top;margin: 1em;">
                             <div class="box-header">
                                 Database
                             </div>
@@ -93,7 +93,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="box" style="width: 40%;display: inline-block; vertical-align: top;margin: 1em;">
+                        <div class="box fragment" style="width: 40%;display: inline-block; vertical-align: top;margin: 1em;">
                             <div class="box-header">
                                 Files
                             </div>
@@ -124,12 +124,18 @@
                     </section>
                     <section>
                         <h2>Install modules</h2>
-                        <p>
-                            Add entries in system table. Execute installation
-                            stuffs (tables creations, edit existing tables or
-                            add contents if hooks from others modules are used,
-                            like create fields, entities).
-                        </p>
+                        <ul>
+                            <li>Add entries in system table.</li>
+                            <li class="fragment">Execute installation
+                            stuffs
+                                <ul>
+                                    <li>create tables</li>
+                                    <li>edit existing tables</li>
+                                    <li>add contents if hooks from others modules are used,
+                            like create fields, entities</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </section>
                     <section>
                         <h2>Create entities (+ bundles, fields)</h2>
@@ -137,15 +143,15 @@
                     </section>
                     <section>
                         <h2>Create / edit content</h2>
-                        <p>Add entries in existing tables.</p>
+                        <p>Add/edit entries in existing tables.</p>
                     </section>
                     <section>
                         <h2>Edit variables</h2>
-                        <p>Add serialized entries in existing table.</p>
+                        <p>Add/edit serialized entries in existing table.</p>
                     </section>
                     <section>
                         <h2>Create / edit displays (like Views, Panels)</h2>
-                        <p>Add entries in existing table.</p>
+                        <p>Add/edit entries in existing table.</p>
                     </section>
                 </section>
 
@@ -157,43 +163,45 @@
                     <section>
                         <h2>Configuration conflict</h2>
                         <ul>
-                            <li>Julien create new A bundle with fields. + Yohan
+                            <li class="fragment">Julien create new A bundle with fields. + Yohan
                             create new B bundle with fields.</li>
-                            <li>Julien and Yohan has to get A and B bundles.</li>
-                            <li>Yohan edit some of this fields from A bundle.</li>
-                            <li>Julien has to get updated fields by Yohan.</li>
+                            <li class="fragment">Julien and Yohan has to get A and B bundles.</li>
+                            <li class="fragment">Yohan edit some of this fields from A bundle.</li>
+                            <li class="fragment">Julien has to get updated fields by Yohan.</li>
                         </ul>
                         <p>
-                            <div style="width: 30%; display: inline-block; border-right: 4px solid white;">
-                                You don't want<br />
-                                You don't have
-                            </div>
-                            <div style="  width: 60%; display: inline-block; vertical-align: top; padding-top: 0.8em; text-align: left; padding-left: 0.8em;">
-                                to make updates manually.
+                            <div class="fragment">
+                                <div style="width: 30%; display: inline-block; border-right: 4px solid white;">
+                                    You don't want<br />
+                                    You don't have
+                                </div>
+                                <div style="  width: 60%; display: inline-block; vertical-align: top; padding-top: 0.8em; text-align: left; padding-left: 0.8em;">
+                                    to make updates manually.
+                                </div>
                             </div>
                         </p>
                     </section>
                     <section>
                         <h2>Data conflict</h2>
                         <ul>
-                            <li>Some contents are needed to build site / work with
+                            <li class="fragment">Some contents are needed to build site / work with
                             existing website. </li>
-                            <li>Developers make some content / configuration
+                            <li class="fragment">Developers make some content / configuration
                             changes, but changed are also made on existing
                             website. </li>
-                            <li style="color: #d74343;"><strong>No content changes</strong> has to be <strong>losed</strong> on each environment.</li>
-                            <li style="color: #d74343;">Every configuration can be automatically overriden. All <strong>configuration</strong> made <strong>"on click"</strong> has to be considered as <strong>volatile</strong>.</li>
+                            <li class="fragment" style="color: #d74343;"><strong>No content changes</strong> has to be <strong>losed</strong> on each environment.</li>
+                            <li class="fragment" style="color: #d74343;">Every configuration can be automatically overriden. All <strong>configuration</strong> made <strong>"on click"</strong> has to be considered as <strong>volatile</strong>.</li>
                         </ul>
                     </section>
                     <section>
                         <h2>Merge solutions</h2>
                         <ul>
-                            <li>No database side solution is possible considering
+                            <li class="fragment">No database side solution is possible considering
                             Drupal structure. </li>
-                            <li>Every changes has to be made in files. Consider,
+                            <li class="fragment">Every changes has to be made in files. Consider,
                             you want to update a website without having access
                             to UI. </li>
-                            <li style="color: #d74343;">Consider every configurations you made with UI are lost.</li>
+                            <li class="fragment" style="color: #d74343;">Consider every configurations you made with UI are lost.</li>
                         </ul>
                     </section>
                 </section>
@@ -209,18 +217,18 @@
                         <h2>Git (or versionning system)</h2>
                         <h3>What it does :</h3>
                         <ul>
-                            <li>Versionning code will prevent you to lose modifications.</li>
-                            <li>Easy to know what changes was made by team.</li>
-                            <li>Easy to know what changes was made in files by automatic tasks like features.</li>
+                            <li class="fragment">Versionning code will prevent you to lose modifications.</li>
+                            <li class="fragment">Easy to know what changes was made by team.</li>
+                            <li class="fragment">Easy to know what changes was made in files written by automatic tasks like features.</li>
                         </ul>
                     </section>
                     <section>
                         <h2>Git (or versionning system)</h2>
                         <h3>What you should use :</h3>
                         <ul>
-                            <li>Use one branch by feature.</li>
-                            <li>Use `rebase` and `pull --rebase` instead of just merge to keep logs readable between branchs.</li>
-                            <li>Prefer little commits with one fix or feature instead of one commit with lots of them : easier to read and fix conflicts.</li>
+                            <li class="fragment">Use one branch by feature.</li>
+                            <li class="fragment">Use `rebase` and `pull --rebase` instead of just merge to keep logs readable between branchs.</li>
+                            <li class="fragment">Prefer little commits with one fix or feature instead of one commit with lots of them : easier to read and fix conflicts.</li>
                         </ul>
                     </section>
                     <section>
@@ -229,9 +237,9 @@
                             Command line tool for drupal.
                         </p>
                         <ul>
-                            <li>Launch commands given by modules (migration, features revert, database update etc).</li>
-                            <li>Build commands with your own tasks in Drupal context.</li>
-                            <li>Don't use custom scripts, create your own commands instead.</li>
+                            <li class="fragment">Launch commands given by modules (migration, features revert, database update etc).</li>
+                            <li class="fragment">Build commands with your own tasks in Drupal context.</li>
+                            <li class="fragment">Don't use custom scripts, create your own commands instead.</li>
                         </ul>
                         <p>
                             <a href="https://github.com/drush-ops/drush" target="_blank">https://github.com/drush-ops/drush</a>
@@ -244,9 +252,9 @@
                             Define list of modules or library and for each :
                         </p>
                         <ul>
-                            <li>Which version</li>
-                            <li>Patchs to apply</li>
-                            <li>Git or wget available</li>
+                            <li class="fragment">Which version</li>
+                            <li class="fragment">Patchs to apply</li>
+                            <li class="fragment">Git or wget available</li>
                         </ul>
                         <p>
                             <a href="http://www.drush.org/en/master/make/" target="_blank">Help on drush.org</a>
@@ -258,8 +266,8 @@
                             Make stuff at project building like :
                         </p>
                         <ul>
-                            <li>Enable modules</li>
-                            <li>Create content</li>
+                            <li class="fragment">Enable modules</li>
+                            <li class="fragment">Create content</li>
                         </ul>
                         <p>
                             <a href="https://www.drupal.org/node/1022020" target="_blank">How to write installation profile.</a>
@@ -273,16 +281,16 @@
                         <ul>
                             <li>Put some configurations built with UI in files :
                                 <ul>
-                                    <li>fields</li>
-                                    <li>variables</li>
-                                    <li>menus</li>
-                                    <li>taxonomies</li>
-                                    <li>views</li>
-                                    <li>panels</li>
-                                    <li>...</li>
+                                    <li class="fragment">fields</li>
+                                    <li class="fragment">variables</li>
+                                    <li class="fragment">menus</li>
+                                    <li class="fragment">taxonomies</li>
+                                    <li class="fragment">views</li>
+                                    <li class="fragment">panels</li>
+                                    <li class="fragment">...</li>
                                 </ul>
                             </li>
-                            <li>and revert them to database.</li>
+                            <li class="fragment">and revert them to database.</li>
                         </ul>
                         <p>
                             <a href="http://drupal.org/project/features" target="_blank">http://drupal.org/project/features</a>
@@ -322,29 +330,29 @@
                     <section>
                         <h2>Ticketing / Kanban</h2>
                         <ul>
-                            <li>Use backlogs and assignments</li>
-                            <li>Methods like Kanban (To do | Doing | Done)</li>
-                            <li>Every changes has to be in tickets</li>
-                            <li>Log everything !</li>
+                            <li class="fragment">Use backlogs and assignments</li>
+                            <li class="fragment">Methods like Kanban (To do | Doing | Done)</li>
+                            <li class="fragment">Every changes has to be in tickets</li>
+                            <li class="fragment">Log everything !</li>
                         </ul>
                     </section>
                     <section>
                         <h2>Talks & meetings</h2>
                         <ul>
-                            <li>Talk with team every days</li>
-                            <li>Difficults, success, talk !</li>
-                            <li>Coffee time, talk !</li>
-                            <li><strike>Beer</strike> talk !</li>
+                            <li class="fragment">Talk with team every days</li>
+                            <li class="fragment">Difficults, success, talk !</li>
+                            <li class="fragment">Coffee time, talk !</li>
+                            <li class="fragment"><strike>Beer</strike> break time talk !</li>
                         </ul>
                     </section>
                     <section>
                         <h2>Management tools examples</h2>
                         <ul>
-                            <li>Redmine (ticketing, management, kanban etc)</li>
-                            <li>Jira (ticketing, management, kanban etc)</li>
-                            <li>Scrum do (agile / kanban)</li>
-                            <li>Taiga (agile / kanban)</li>
-                            <li>Many others, list is too long.</li>
+                            <li class="fragment">Redmine (ticketing, management, kanban etc)</li>
+                            <li class="fragment">Jira (ticketing, management, kanban etc)</li>
+                            <li class="fragment">Scrum do (agile / kanban)</li>
+                            <li class="fragment">Taiga (agile / kanban)</li>
+                            <li class="fragment">Many others, list is too long.</li>
                         </ul>
                     </section>
                 </section>
@@ -378,14 +386,14 @@
                     <section>
                         <h2>Keep environments up to date</h2>
                         <p>
-                            Do not maintain manually dev, staging etc environments.<br />Keep them automatically up to date with solutions like <a href="https://platform.sh/" target="_blank"><img src="/img/logo-platform-onblack.png" title="platform.sh" alt="platform.sh" style="text-underline: none; border: 0;background: none;" /></a>
+                            Do not maintain manually dev, staging etc environments.<br />Keep them automatically up to date with solutions like <a class="fragment" href="https://platform.sh/" target="_blank"><img src="/img/logo-platform-onblack.png" title="platform.sh" alt="platform.sh" style="text-underline: none; border: 0;background: none;" /></a>
                         </p>
                         <ul>
-                            <li>Code updated thanks to git.</li>
-                            <li>Each environments are separated with their own services.</li>
-                            <li>Sync code / files / database between environments.</li>
-                            <li>Use makefile to rebuild drupal code each time you push code.</li>
-                            <li>Make stuff each time you push code like features revert, database updates, translations etc.</li>
+                            <li class="fragment">Code updated thanks to git.</li>
+                            <li class="fragment">Each environments are separated with their own services.</li>
+                            <li class="fragment">Sync code / files / database between environments.</li>
+                            <li class="fragment">Use makefile to rebuild drupal code each time you push code.</li>
+                            <li class="fragment">Make stuff each time you push code like features revert, database updates, translations etc.</li>
                         </ul>
                     </section>
                 </section>
